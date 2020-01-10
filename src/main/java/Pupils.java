@@ -9,4 +9,14 @@ public class Pupils {
     private int postcode;
     private int city;
 
+
+    public Pupils(int id, String lastName, String firstName, Date dateOfBirth, int postcode, int city) {
+        this.id = id;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.dateOfBirth = dateOfBirth;
+        this.postcode = postcode;
+        this.city = city;
+    }
+
 }
