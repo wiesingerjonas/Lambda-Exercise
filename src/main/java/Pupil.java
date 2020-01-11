@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Pupils {
+public class Pupil {
 
     private int id;
     private String lastName;
@@ -10,7 +10,7 @@ public class Pupils {
     private int city;
 
 
-    public Pupils(int id, String lastName, String firstName, Date dateOfBirth, int postcode, int city) {
+    public Pupil(int id, String lastName, String firstName, Date dateOfBirth, int postcode, int city) {
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -18,7 +18,6 @@ public class Pupils {
         this.postcode = postcode;
         this.city = city;
     }
-
 
     //region GETTER
     public int getId() {
@@ -71,4 +70,10 @@ public class Pupils {
         this.city = city;
     }
     //endregion
+
+
+    @Override
+    public String toString() {
+        return firstName + " " + this.lastName + " was born on " + this.dateOfBirth + "and lives in" + this.postcode + " " + this.city;
+    }
 }
