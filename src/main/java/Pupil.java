@@ -1,16 +1,14 @@
-import java.util.Date;
-
 public class Pupil {
 
     private int id;
     private String lastName;
     private String firstName;
-    private Date dateOfBirth;
+    private String dateOfBirth;
     private int postcode;
     private int city;
 
 
-    public Pupil(int id, String lastName, String firstName, Date dateOfBirth, int postcode, int city) {
+    public Pupil(int id, String lastName, String firstName, String dateOfBirth, int postcode, int city) {
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -32,7 +30,7 @@ public class Pupil {
         return firstName;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
@@ -58,7 +56,7 @@ public class Pupil {
         this.firstName = firstName;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
