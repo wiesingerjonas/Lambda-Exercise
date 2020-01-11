@@ -5,10 +5,10 @@ public class Pupil {
     private String firstName;
     private String dateOfBirth;
     private int postcode;
-    private int city;
+    private String city;
 
 
-    public Pupil(int id, String lastName, String firstName, String dateOfBirth, int postcode, int city) {
+    public Pupil(int id, String lastName, String firstName, String dateOfBirth, int postcode, String city) {
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -38,7 +38,7 @@ public class Pupil {
         return postcode;
     }
 
-    public int getCity() {
+    public String getCity() {
         return city;
     }
     //endregion
@@ -64,7 +64,7 @@ public class Pupil {
         this.postcode = postcode;
     }
 
-    public void setCity(int city) {
+    public void setCity(String city) {
         this.city = city;
     }
     //endregion
